@@ -1,16 +1,10 @@
 public class MetodoBurbuja { 
 
-    int[] arreglo;  //global lista de enteros
+    int[] arreglo; 
 
     //Constructor vacio
 
     public MetodoBurbuja(int[]arreglo){
-        //System.out.//println("Metodo Burbuja");
-        // 1 forma
-        // Instanciar con valor creado en constructor
-        //this.arreglo = new int []{10,5,8,0,7};
-        // 2 forma
-        // Instanciar con valor desde parametro
         this.arreglo = arreglo;
     }
     public void ordenarAscendente(){
