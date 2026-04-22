@@ -11,7 +11,7 @@ public class MetodoBurbujaAvanzado {
         int contCambios = 0;
         boolean huboIntercambios;
         for (int i = 0; i < tam - 1; i++) {
-            huboIntercambios = true;
+            huboIntercambios = false;
             for (int j = 0; j < tam - 1 - i; j++) {
                 // Comparacion
                 contComparaciones++;
