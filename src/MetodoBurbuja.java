@@ -1,46 +1,45 @@
-public class MetodoBurbuja {
-    int[] arreglo;
+public class MetodoBurbuja { 
 
-    // Constructor
-    public MetodoBurbuja(int[] arreglo) {
+    int[] arreglo;  //global lista de enteros
+
+    //Constructor vacio
+
+    public MetodoBurbuja(int[]arreglo){
+        //System.out.//println("Metodo Burbuja");
+        // 1 forma
+        // Instanciar con valor creado en constructor
+        //this.arreglo = new int []{10,5,8,0,7};
+        // 2 forma
+        // Instanciar con valor desde parametro
         this.arreglo = arreglo;
     }
-
-    public void metodoBurbuja(){
-        System.out.println("Se creo la clase Met Burbuja");
-        this.arreglo = new int[]{10,-5,0,2,7};
-        //seg from
-    }
-
     public void ordenarAscendente(){
-        for(int i=0; i<arreglo.length;i++){
-            for(int j = i+1; j<arreglo.length;j++){
-                if(arreglo[i] < arreglo[j]){
+        for (int i =0; i<arreglo.length;i++){
+            for (int j =i+1; j<arreglo.length;j++){
+                if(arreglo[i] > arreglo [j]){
                     int aux = arreglo[i];
-                    arreglo[i] = arreglo[j];
-                    arreglo[j] = aux;
+                    arreglo [i] =arreglo [j];
+                    arreglo [j] = aux;
                 }
             }
         }
     }
+
+    
     public void ordenarDescendente(){
-        for(int i=0; i<arreglo.length;i++){
-            for(int j = i-1; j<arreglo.length;j++){
-                if(arreglo[i] > arreglo[j]){
+        for (int i =0; i<arreglo.length;i++){
+            for (int j =i+1; j<arreglo.length;j++){
+                if(arreglo[i] <  arreglo [j]){
                     int aux = arreglo[i];
-                    arreglo[i] = arreglo[j];
-                    arreglo[j] = aux;
+                    arreglo [i] =arreglo [j];
+                    arreglo [j] = aux;
                 }
             }
         }
     }
-
-
-
     public void imprimirArreglo(){
         for(int num : arreglo){
-            System.out.println(num + ",");
-
+            System.out.print(num + ",");
         }
         System.out.println();
     }
